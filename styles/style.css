@@ -231,6 +231,7 @@ color: #6C6C6C;
     }
     
     .all-photos{
+        text-align: center;
         grid-template-columns: repeat(1,1fr);
     }
     .all-photos img{
@@ -256,15 +257,3 @@ color: #6C6C6C;
 /* ----------------
   for tablet devices
 ------------------- */
-@media only screen and (min-width:688px) and (max-width:992px){
-  header,footer{
-      display: none;
-  }
-
-
-  .blogs{
-    grid-template-columns: repeat(2,1fr);
-}
-
-
-}
