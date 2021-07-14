@@ -257,3 +257,25 @@ color: #6C6C6C;
 /* ----------------
   for tablet devices
 ------------------- */
+@media only screen and (min-width:688px) and (max-width:992px){
+
+    .top-banner{
+        flex-direction: column;
+    }
+    .banner-name .watch-button{
+        margin-bottom: 50px;
+    }
+
+    .blogs{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .all-photos{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .all-photos img{
+        width: 350px;
+    }
+    
+}
