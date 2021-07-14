@@ -41,6 +41,22 @@ color: #FFFFFF;
 margin-top: 20px;
 }
 
+.banner-name .watch-button{
+    background-color: #E02C6D;
+    color: #ffffff;
+    padding: 10px 24px;
+    border: none;
+    margin-top: 27px;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 2px 0px 5px orangered;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.banner-name .watch-button:hover{
+    background-color: orangered;
+}
+
 .banner-image img{
     width: 556px;
     height: 438px;
@@ -56,25 +72,29 @@ margin-top: 20px;
     background-color: #FFFFFF;
     display: flex;
     justify-content: center;
+    
 }
 .blogs{
 display: grid;
 grid-template-columns: repeat(3,1fr);
 grid-column-gap: 30px;
 grid-row-gap: 27px; 
+
 }
 
 .blog-info{
 width: 330px;
- padding:15px 0;
+ padding:13px 0;
  border-radius: 3px;
 padding-right: 0;
 background-color: #FFFFFF;
 box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 transition: box-shadow 0.3s ease-in-out;
+overflow: hidden;
 }
 .blog-info:hover{
     box-shadow: 2px 0px 5px gray;
+    
 }
 .blog-info h3{
     color: #18191F;
@@ -92,20 +112,27 @@ color: #6C6C6C;
 
 .blog-info h3,p{
     padding:0 15px;
+    
+    
 }
 
 .thumbnail img{
     width: 300px;
-height: 256px;
-margin-left: 15px;
+    height: 256px;
+    margin-left: 14.5px;
+    transition: transform 0.5s ease-in;
+}
+
+.thumbnail img:hover{
+    transform: scale(1.1);
+    
+    
 }
 
 /* ------------------
    footer style start 
 ------------------- */
-foooter{
-    
-}
+
 .footer-topics{
     text-align: center;
     padding: 60px 0px;
@@ -140,4 +167,57 @@ foooter{
     color: #000000;
     line-height: 24px;
 }
+
+/*----------------------------
+ responsive any devices start 
+----------------------------- */
+
+/* for mobile devices */
+
+@media only screen and (max-width:688px){
+    header{
+        padding: 50px;
+        width: 100%;
+        overflow: hidden; 
+    }
+    .top-banner{
+        flex-direction: column;
+       
+    }
+    .banner-name h1 {
+        font-size: 40px;
+        line-height: 55px;
+       
+    }
+    .banner-name .watch-button{
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    .banner-image img{
+        width: 400px;
+        height:300px;
+      
+    }
+
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+   
+
+     .footer-topics{
+        padding-top: 20px;
+    }
+
+    .footer-logo img{
+        width: 300px;
+        height: 70px;
+    }
+
+    .icons .filled{
+        font-size: 24px;
+        margin-left: 10px;
+    } 
+  
+}
+
 
