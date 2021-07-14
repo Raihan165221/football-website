@@ -129,6 +129,30 @@ color: #6C6C6C;
     
 }
 
+/* --------------------------
+  photo gallery style starts 
+---------------------------- */
+.photo-gallery{
+    margin-bottom: 20px;
+}
+.photo-title{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.all-photos{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+
+.all-photos img{
+    width: 300px;
+    height: 200px;
+}
+
+
 /* ------------------
    footer style start 
 ------------------- */
@@ -202,7 +226,16 @@ color: #6C6C6C;
     .blogs{
         grid-template-columns: repeat(1,1fr);
     }
-   
+    .photo-title{
+        font-size: 30px;
+    }
+    
+    .all-photos{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .all-photos img{
+        width: 400px;
+    }
 
      .footer-topics{
         padding-top: 20px;
@@ -220,4 +253,18 @@ color: #6C6C6C;
   
 }
 
+/* ----------------
+  for tablet devices
+------------------- */
+@media only screen and (min-width:688px) and (max-width:992px){
+  header,footer{
+      display: none;
+  }
 
+
+  .blogs{
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+}
